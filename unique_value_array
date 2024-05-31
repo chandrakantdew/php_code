@@ -1,0 +1,21 @@
+$array = array (1,4,2,1,6,4,9,7,2,9);
+
+function unique($arr){
+   $uarr = [];
+   foreach($arr as $arrv){
+       
+       foreach($uarr as $uv){
+           if($uv === $arrv){
+               continue 2;
+           }
+       }
+        $uarr[] = $arrv;
+   }
+   
+   return $uarr;
+}
+
+$uarray = unique($array);
+
+echo "<pre>";
+print_r($uarray);
