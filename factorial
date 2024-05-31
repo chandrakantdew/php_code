@@ -1,0 +1,7 @@
+$factorial = 4;
+$num = 1;
+
+for($i = 1; $i <= $factorial; $i++){
+    $num = $num*$i;
+}
+echo $num;
