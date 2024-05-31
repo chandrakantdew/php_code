@@ -1,0 +1,10 @@
+$array = [1,2,3,4,6,7,8,10];
+$mis_array = [];
+for($i = 1; $i <= max($array); $i++){
+    if(!in_array($i, $array)){
+        array_push($mis_array, $i);
+    }
+}
+
+echo "<pre>";
+print_r($mis_array);
