@@ -8,3 +8,26 @@ for($i = 1; $i <= max($array); $i++){
 
 echo "<pre>";
 print_r($mis_array);
+
+
+
+
+$array = [1,2,6,7,8,10,9];
+$max = max($array);
+$num = 1;
+
+for($i=1;$i<=$max;$i++){
+     
+     if($i != $num){
+         echo ($i-1).',';
+         $num++;
+     }
+     
+     foreach($array as $val){
+         if($val === $i){
+             $num++;
+             break;
+         }
+     }
+ 	
+ }
