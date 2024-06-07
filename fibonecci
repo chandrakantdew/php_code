@@ -1,0 +1,19 @@
+$num1 = 0;
+$num2 = 1;
+for($i=0;$i<10;$i++)
+{
+	if($i==0 || $i==1){
+	echo $i.",";
+  
+    }
+  if($i>1)
+   {
+    $final = $num1 + $num2;
+    echo $final.',';
+    $num1 = $num2;
+    $num2 = $final;
+    
+    
+    }
+    
+}
